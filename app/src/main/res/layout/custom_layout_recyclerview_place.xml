@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:id="@+id/cardView_place"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/txtAverageRate"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_cycle"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/colorWhite"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtRestaurantName_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tu Son House"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtRestaurantAddress_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To 2, Thon Tu Son, Binh Trung, Thang Binh, Quang Nam"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtRestaurantDistance_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_margin="5dp"
+                android:layout_gravity="bottom"
+                android:text="6.6km"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgRestaurant_place"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/pic_test"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+        <Button
+            android:id="@+id/btnOrder_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order"
+            android:padding="5dp"
+            android:drawableTop="@drawable/ic_shipping"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            tools:ignore="VisualLintButtonSize" />
+
+        <LinearLayout
+            android:id="@+id/containerComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleUserImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="6.8"
+                android:gravity="center"
+                android:src="@drawable/bg_login"
+                android:background="@drawable/background_cycle"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="5dp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="TextSizeCheck">
+
+                <TextView
+                    android:id="@+id/txtCommentTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tu Son House"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtCommentContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To 2, Thon Tu Son, Binh Trung, Thang Binh, Quang Nam"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtCommentRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="6.6"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/containerComment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleUserImage2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="6.8"
+                android:gravity="center"
+                android:src="@drawable/bg_login"
+                android:background="@drawable/background_cycle"
+                android:textColor="@color/colorAccent"
+                android:layout_margin="5dp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="TextSizeCheck">
+
+                <TextView
+                    android:id="@+id/txtCommentTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tu Son House"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtCommentContent2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To 2, Thon Tu Son, Binh Trung, Thang Binh, Quang Nam"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtCommentRate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="7.0"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            >
+
+            <TextView
+                android:id="@+id/txtCommentTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:drawableStart="@drawable/ic_comment"
+                android:textAlignment="center"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+
+            <TextView
+                android:id="@+id/txtCommentImageTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableStart="@drawable/ic_photo"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="0"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

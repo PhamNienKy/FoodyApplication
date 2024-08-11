@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundHomePage"
+    android:orientation="vertical"
+    tools:ignore="Orientation">
+
+    <RadioGroup
+        android:id="@+id/gp_tab_radio"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        >
+
+        <RadioButton
+            android:id="@+id/rd_lastest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/changebackground_tab"
+            android:button="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_arrow_down"
+            android:text="@string/lastest"
+            android:textAlignment="center"
+            android:textColor="@drawable/changetext_tab_homepage"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackgroundHomePage"/>
+
+        <RadioButton
+            android:id="@+id/rd_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_arrow_down"
+            android:text="@string/category"
+            android:textAlignment="center"
+            android:textColor="@drawable/changetext_tab_homepage"
+            android:background="@drawable/changebackground_tab"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackgroundHomePage"/>
+
+        <RadioButton
+            android:id="@+id/rd_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_arrow_down"
+            android:text="@string/location"
+            android:textAlignment="center"
+            android:textColor="@drawable/changetext_tab_homepage"
+            android:background="@drawable/changebackground_tab"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_margin="5dp"
+                    android:text="@string/nearby"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_nearby"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    tools:ignore="RtlHardcoded"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_margin="5dp"
+                    android:text="@string/blog"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_blog"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    tools:ignore="RtlHardcoded"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_margin="5dp"
+                    android:text="@string/order_delivery"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_delivery"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    tools:ignore="RtlHardcoded"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_margin="5dp"
+                    android:text="@string/gameandfun"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_gameandfun"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    tools:ignore="RtlHardcoded"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_margin="5dp"
+                    android:text="@string/review"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_review"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    tools:ignore="RtlHardcoded"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_margin="5dp"
+                    android:text="@string/topmember"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/icon_member"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    tools:ignore="RtlHardcoded"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarComment"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write a comment"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/txtPostComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:text="@string/post"
+            android:textColor="@color/colorWhite"
+            android:padding="5dp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundHomePage"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+        <TextView
+            android:id="@+id/txtRestaurantName_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tusonhouse"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/txtRestaurantAddress_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binh Trung, Thang Binh, Quang Nam"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edTitleComment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Title (optional)"
+        android:textSize="20sp"
+        android:background="@color/colorWhite"
+        tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBackgroundHomePage"
+        />
+    <EditText
+        android:id="@+id/edContentComment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="Write over 100 words, correct spelling, cultural language, no spam,... to get bonus points"
+        android:textSize="18sp"
+        android:gravity="top"
+        tools:ignore="Autofill,HardcodedText,InefficientWeight,TextFields,VisualLintTextFieldSize" />
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSelectedImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBackgroundHomePage"
+        >
+
+        <ImageButton
+            android:id="@+id/btnSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorBackgroundHomePage"
+            android:src="@drawable/ic_camera_black"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorBackgroundHomePage"
+            android:src="@drawable/ic_videocam_black"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorBackgroundHomePage"
+            android:src="@drawable/ic_star_black"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+
+</LinearLayout>

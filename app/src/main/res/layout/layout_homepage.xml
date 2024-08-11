@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundHomePage"
+    android:orientation="vertical"
+    tools:ignore="Orientation">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_f" />
+
+        <RadioGroup
+            android:id="@+id/gp_place_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_radiobuttongroup_homepage"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rd_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_radio_place"
+                android:button="@android:color/white"
+                android:checked="true"
+                android:padding="10dp"
+                android:text="@string/place"
+                android:textColor="@drawable/changetext_radio_homepage"
+                tools:ignore="TouchTargetSizeCheck"
+                />
+
+            <RadioButton
+                android:id="@+id/rd_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_radio_food"
+                android:button="@android:color/white"
+                android:padding="10dp"
+                android:text="@string/food"
+                android:textColor="@drawable/changetext_radio_homepage"
+                tools:ignore="TouchTargetSizeCheck"
+                />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imgAddRestaurant"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_add"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpage_homepage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</LinearLayout>
